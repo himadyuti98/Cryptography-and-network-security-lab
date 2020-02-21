@@ -1,0 +1,944 @@
+====TESTCASE 1====
+
+./enc
+Enter 128 bits key as 16 bytes in hexadecimal form
+00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f
+Enter one block (128 bits) plaintext as 16 bytes in hexadecimal form
+00 11 22 33 44 55 66 77 88 99 aa bb cc dd ee ff 
+Round keys
+
+
+Round 1
+d6 d2 da d6 
+aa af a6 ab 
+74 72 78 76 
+fd fa f1 fe 
+
+
+Round 2
+b6 64 be 68 
+92 3d 9b 30 
+cf bd c5 b3 
+b f1 0 fe 
+
+
+Round 3
+b6 d2 6c 4 
+ff c2 59 69 
+74 c9 c bf 
+4e bf bf 41 
+
+
+Round 4
+47 95 f9 fd 
+f7 35 6c 5 
+f7 3e 32 8d 
+bc 3 bc fd 
+
+
+Round 5
+3c a9 50 ad 
+aa 9f f3 f6 
+a3 9d af 22 
+e8 eb 57 aa 
+
+
+Round 6
+5e f7 a7 a 
+39 a6 55 a3 
+f 92 3d 1f 
+7d 96 c1 6b 
+
+
+Round 7
+14 e3 44 4e 
+f9 5f a a9 
+70 e2 df c0 
+1a 8c 4d 26 
+
+
+Round 8
+47 a4 e0 ae 
+43 1c 16 bf 
+87 65 ba 7a 
+35 b9 f4 d2 
+
+
+Round 9
+54 f0 10 be 
+99 85 93 2c 
+32 57 ed 97 
+d1 68 9c 4e 
+
+
+Round 10
+13 e3 f3 4d 
+11 94 7 2b 
+1d 4a a7 30 
+7f 17 8b c5 
+
+
+Before Rounds 
+0 40 80 c0 
+10 50 90 d0 
+20 60 a0 e0 
+30 70 b0 f0 
+
+
+Round 1
+89 85 2d cb 
+d8 5a 18 12 
+10 ce 43 8f 
+e8 68 d8 e4 
+
+
+Round 2
+49 55 da 1f 
+15 e5 ca a 
+59 d7 94 63 
+8f a0 fa f7 
+
+
+Round 3
+fa 25 40 57 
+63 b3 66 24 
+6a 39 8a 4d 
+28 c9 31 17 
+
+
+Round 4
+24 69 6e 88 
+72 66 d2 42 
+40 b3 75 5b 
+23 fa 32 6c 
+
+
+Round 5
+c8 9b 25 b0 
+16 7a 2 26 
+77 c9 79 19 
+bc 3b 92 96 
+
+
+Round 6
+c6 f7 cc 84 
+2f 5e 79 f9 
+e1 ed 39 cf 
+9 c3 5d 5d 
+
+
+Round 7
+d1 79 b4 d6 
+87 c4 55 6f 
+6c 30 94 f4 
+f a ad 1f 
+
+
+Round 8
+fd 5 35 f1 
+e3 e5 47 fe 
+ba d0 96 37 
+d2 d7 4e f1 
+
+
+Round 9
+bd f2 b 8b 
+6e b5 61 10 
+7c 77 21 b6 
+3d 9e 6e 89 
+
+
+Round 10
+69 6a d8 70 
+c4 7b cd b4 
+e0 4 b7 c5 
+d8 30 80 5a 
+
+./decr
+Enter 128 bits key as 16 bytes in hexadecimal form
+00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 
+Enter one block (128 bits) ciphertext as 16 bytes in hexadecimal form
+69 c4 e0 d8 6a 7b 4 30 d8 cd b7 80 70 b4 c5 5a
+Round keys
+
+
+Round 1
+d6 d2 da d6 
+aa af a6 ab 
+74 72 78 76 
+fd fa f1 fe 
+
+
+Round 2
+b6 64 be 68 
+92 3d 9b 30 
+cf bd c5 b3 
+b f1 0 fe 
+
+
+Round 3
+b6 d2 6c 4 
+ff c2 59 69 
+74 c9 c bf 
+4e bf bf 41 
+
+
+Round 4
+47 95 f9 fd 
+f7 35 6c 5 
+f7 3e 32 8d 
+bc 3 bc fd 
+
+
+Round 5
+3c a9 50 ad 
+aa 9f f3 f6 
+a3 9d af 22 
+e8 eb 57 aa 
+
+
+Round 6
+5e f7 a7 a 
+39 a6 55 a3 
+f 92 3d 1f 
+7d 96 c1 6b 
+
+
+Round 7
+14 e3 44 4e 
+f9 5f a a9 
+70 e2 df c0 
+1a 8c 4d 26 
+
+
+Round 8
+47 a4 e0 ae 
+43 1c 16 bf 
+87 65 ba 7a 
+35 b9 f4 d2 
+
+
+Round 9
+54 f0 10 be 
+99 85 93 2c 
+32 57 ed 97 
+d1 68 9c 4e 
+
+
+Round 10
+13 e3 f3 4d 
+11 94 7 2b 
+1d 4a a7 30 
+7f 17 8b c5 
+
+
+Before Rounds 
+7a 89 2b 3d 
+d5 ef ca 9f 
+fd 4e 10 f5 
+a7 27 b 9f 
+
+
+Round 1
+54 6b 96 a1 
+d9 a0 bb 11 
+90 9a f4 70 
+a1 b5 e 2f 
+
+
+Round 2
+3e b6 8d f6 
+1c fc a8 17 
+22 bf 50 4 
+c0 76 67 95 
+
+
+Round 3
+b4 68 4b 5f 
+58 b6 99 15 
+12 8a f8 55 
+4c 1 2e 4c 
+
+
+Round 4
+e8 14 3f e7 
+da 77 f7 47 
+b6 d4 f5 dd 
+90 65 e2 4f 
+
+
+Round 5
+36 f9 9f c4 
+33 b5 2c 40 
+9d 39 9 6d 
+50 26 2d 23 
+
+
+Round 6
+2d 3f 9 5b 
+6d 33 36 fb 
+7e e3 2 12 
+f0 34 dd c7 
+
+
+Round 7
+3b fc 57 c0 
+d9 74 67 59 
+22 fb cb e 
+68 73 e0 2d 
+
+
+Round 8
+a7 97 d8 1f 
+be ad c9 61 
+1a 73 ca 8b 
+69 9b 45 61 
+
+
+Round 9
+63 9 cd ba 
+53 60 70 ca 
+e0 e1 b7 d0 
+8c 4 51 e7 
+
+
+Round 10
+0 44 88 cc 
+11 55 99 dd 
+22 66 aa ee 
+33 77 bb ff 
+
+
+Plain text block as 16 bytes in hexadecimal: 0 11 22 33 44 55 66 77 88 99 aa bb cc dd ee ff 
+
+
+====TESTCASE 2====
+
+./enc
+Enter 128 bits key as 16 bytes in hexadecimal form
+54 39 47 a6 3b 87 12 98 60 fd c3 37 ac c5 d6 28
+Enter one block (128 bits) plaintext as 16 bytes in hexadecimal form
+90 37 92 10 38 20 b4 c7 2b a8 27 98 c7 23 19 20
+Round keys
+
+
+Round 1
+f3 c8 a8 4 
+cf 48 b5 70 
+73 61 a2 74 
+37 af 98 b0 
+
+
+Round 2
+a0 68 c0 c4 
+5d 15 a0 d0 
+94 f5 57 23 
+c5 6a f2 42 
+
+
+Round 3
+d4 bc 7c b8 
+7b 6e ce 1e 
+b8 4d 1a 39 
+d9 b3 41 3 
+
+
+Round 4
+ae 12 6e d6 
+69 7 c9 d7 
+c3 8e 94 ad 
+b5 6 47 44 
+
+
+Round 5
+b0 a2 cc 1a 
+fc fb 32 e5 
+d8 56 c2 6f 
+43 45 2 46 
+
+
+Round 6
+49 eb 27 3d 
+54 af 9d 78 
+82 d4 16 79 
+e1 a4 a6 e0 
+
+
+Round 7
+b5 5e 79 44 
+e2 4d d0 a8 
+63 b7 a1 d8 
+c6 62 c4 24 
+
+
+Round 8
+f7 a9 d0 94 
+83 ce 1e b6 
+55 e2 43 9b 
+dd bf 7b 5f 
+
+
+Round 9
+a2 b db 4f 
+97 59 47 f1 
+9a 78 3b a0 
+ff 40 3b 64 
+
+
+Round 10
+35 3e e5 aa 
+77 2e 69 98 
+d9 a1 9a 3a 
+7b 3b 0 64 
+
+
+Before Rounds 
+c4 3 4b 6b 
+e a7 55 e6 
+d5 a6 e4 cf 
+b6 5f af 8 
+
+
+Round 1
+76 e5 90 41 
+e0 1b cb 57 
+b1 3b d3 63 
+46 c8 5e 4c 
+
+
+Round 2
+75 41 cd 5b 
+a3 be dd ef 
+b4 30 c4 76 
+16 4a a 6f 
+
+
+Round 3
+a8 86 3c b7 
+2d 7b 8c 58 
+50 b6 18 ab 
+9c 5a 78 88 
+
+
+Round 4
+3b 8a f0 1e 
+c1 f3 bd bb 
+36 13 6a 9f 
+f7 6b 3f 51 
+
+
+Round 5
+ab 63 90 7e 
+d3 6f 1 95 
+5b 47 2f 0 
+c8 b6 9c 3f 
+
+
+Round 6
+e 9 ee 14 
+37 e1 ac 62 
+fd b6 fc ce 
+10 66 89 8f 
+
+
+Round 7
+28 b5 ab f7 
+1a 39 78 8 
+de 6f de d6 
+8e f4 24 b0 
+
+
+Round 8
+53 28 e6 27 
+53 60 84 54 
+7b 57 f1 40 
+5b a3 95 81 
+
+
+Round 9
+a5 b2 97 91 
+35 f1 e0 3b 
+ea 4a c9 49 
+ba 38 a7 c9 
+
+
+Round 10
+33 9 6d 2b 
+d6 cf 8b e 
+4 9a 1d ec 
+a6 cf 7 38 
+
+
+Cipher text block as 16 bytes in hexadecimal: 33 d6 4 a6 9 cf 9a cf 6d 8b 1d 7 2b e ec 38 
+
+./decr
+Enter 128 bits key as 16 bytes in hexadecimal form
+54 39 47 a6 3b 87 12 98 60 fd c3 37 ac c5 d6 28
+Enter one block (128 bits) ciphertext as 16 bytes in hexadecimal form
+33 d6 4 a6 9 cf 9a cf 6d 8b 1d 7 2b e ec 38
+Round keys
+
+
+Round 1
+f3 c8 a8 4 
+cf 48 b5 70 
+73 61 a2 74 
+37 af 98 b0 
+
+
+Round 2
+a0 68 c0 c4 
+5d 15 a0 d0 
+94 f5 57 23 
+c5 6a f2 42 
+
+
+Round 3
+d4 bc 7c b8 
+7b 6e ce 1e 
+b8 4d 1a 39 
+d9 b3 41 3 
+
+
+Round 4
+ae 12 6e d6 
+69 7 c9 d7 
+c3 8e 94 ad 
+b5 6 47 44 
+
+
+Round 5
+b0 a2 cc 1a 
+fc fb 32 e5 
+d8 56 c2 6f 
+43 45 2 46 
+
+
+Round 6
+49 eb 27 3d 
+54 af 9d 78 
+82 d4 16 79 
+e1 a4 a6 e0 
+
+
+Round 7
+b5 5e 79 44 
+e2 4d d0 a8 
+63 b7 a1 d8 
+c6 62 c4 24 
+
+
+Round 8
+f7 a9 d0 94 
+83 ce 1e b6 
+55 e2 43 9b 
+dd bf 7b 5f 
+
+
+Round 9
+a2 b db 4f 
+97 59 47 f1 
+9a 78 3b a0 
+ff 40 3b 64 
+
+
+Round 10
+35 3e e5 aa 
+77 2e 69 98 
+d9 a1 9a 3a 
+7b 3b 0 64 
+
+
+Before Rounds 
+6 37 88 81 
+a1 e1 e2 96 
+dd 3b 87 d6 
+dd f4 7 5c 
+
+
+Round 1
+ed 34 8e cc 
+d0 5f 20 ed 
+a1 9 21 5b 
+c 39 a 2a 
+
+
+Round 2
+34 d5 62 68 
+12 bc 30 a2 
+1d f6 1d a8 
+e7 19 bf 36 
+
+
+Round 3
+ab 1 28 fa 
+f8 91 aa 9a 
+b0 8b 54 4e 
+73 ca 33 a7 
+
+
+Round 4
+62 fb 60 f3 
+a8 7c 2a 66 
+15 63 39 a0 
+75 e8 4e de 
+
+
+Round 5
+e2 7e 8c 72 
+d 7a ea 78 
+2 db 5 7d 
+d1 68 7f 75 
+
+
+Round 6
+c2 44 eb a9 
+21 64 6a d8 
+ad 62 53 4e 
+c4 de be bc 
+
+
+Round 7
+9d 83 bd 39 
+ae c1 df a 
+1c 38 8d 4 
+a8 47 d6 67 
+
+
+Round 8
+38 d9 60 83 
+af 1f 5b e1 
+66 fb c8 e2 
+29 5a e8 58 
+
+
+Round 9
+1c 7b b3 7f 
+5c fc 8e ab 
+69 8a 3 24 
+30 4e cf 79 
+
+
+Round 10
+90 38 2b c7 
+37 20 a8 23 
+92 b4 27 19 
+10 c7 98 20 
+
+
+Plain text block as 16 bytes in hexadecimal: 90 37 92 10 38 20 b4 c7 2b a8 27 98 c7 23 19 20 
+
+====TESTCASE 3====
+./enc
+Enter 128 bits key as 16 bytes in hexadecimal form
+89 34 dc 23 86 12 09 cd 2c 65 ac a6 76 d5 56 92
+Enter one block (128 bits) plaintext as 16 bytes in hexadecimal form
+74 83 20 1b 93 ab a6 19 3b 1c 4a d6 27 97 18 a0
+Round keys
+
+
+Round 1
+8b d 21 57 
+85 97 f2 27 
+93 9a 36 60 
+1b d6 70 e2 
+
+
+Round 2
+45 48 69 3e 
+55 c2 30 17 
+b 91 a7 c7 
+40 96 e6 4 
+
+
+Round 3
+b1 f9 90 ae 
+93 51 61 76 
+f9 68 cf 8 
+f2 64 82 86 
+
+
+Round 4
+81 78 e8 46 
+a3 f2 93 e5 
+bd d5 1a 12 
+16 72 f0 76 
+
+
+Round 5
+48 30 d8 9e 
+6a 98 b ee 
+85 50 4a 58 
+4c 3e ce b8 
+
+
+Round 6
+40 70 a8 36 
+0 98 93 7d 
+e9 b9 f3 ab 
+47 79 b7 f 
+
+
+Round 7
+ff 8f 27 11 
+62 fa 69 14 
+9f 26 d5 7e 
+42 3b 8c 83 
+
+
+Round 8
+85 a 2d 3c 
+91 6b 2 16 
+73 55 80 fe 
+c0 fb 77 f4 
+
+
+Round 9
+d9 d3 fe c2 
+2a 41 43 55 
+cc 99 19 e7 
+2b d0 a7 53 
+
+
+Round 10
+13 c0 3e fc 
+be ff bc e9 
+21 b8 a1 46 
+e de 79 2a 
+
+
+Before Rounds 
+fd 15 17 51 
+b7 b9 79 42 
+fc af e6 4e 
+38 d4 70 32 
+
+
+Round 1
+74 56 56 26 
+d7 cf d9 65 
+f3 22 49 19 
+79 aa 77 f8 
+
+
+Round 2
+85 c 66 bf 
+c4 c8 a0 a7 
+a6 67 ae 7 
+de c8 2d 6a 
+
+
+Round 3
+41 fd de c7 
+fa 3d 6e a 
+53 c0 cb 7e 
+58 62 64 ac 
+
+
+Round 4
+7b f3 3c 5f 
+de e7 c6 ef 
+8f 5d 44 53 
+89 36 12 36 
+
+
+Round 5
+b3 a7 19 b9 
+50 6d d5 6 
+9 da 97 52 
+aa 25 4e 2a 
+
+
+Round 6
+b3 61 94 17 
+73 6e a5 5b 
+87 9 b 71 
+95 dd c0 af 
+
+
+Round 7
+cd c9 fe db 
+2e cd c1 58 
+b0 ec b8 d6 
+b3 e0 5d 69 
+
+
+Round 8
+ad b8 f8 84 
+0 2a be c8 
+bb b0 bc 25 
+24 d3 f5 43 
+
+
+Round 9
+a3 eb d3 d8 
+db 1d 8a 18 
+58 7f d5 3f 
+3b 99 aa e1 
+
+
+Round 10
+19 29 58 9d 
+1a 81 11 50 
+22 cd cb 94 
+f6 3c 97 86 
+
+
+Cipher text block as 16 bytes in hexadecimal: 19 1a 22 f6 29 81 cd 3c 58 11 cb 97 9d 50 94 86
+
+./decr
+Enter 128 bits key as 16 bytes in hexadecimal form
+89 34 dc 23 86 12 09 cd 2c 65 ac a6 76 d5 56 92
+Enter one block (128 bits) ciphertext as 16 bytes in hexadecimal form
+19 1a 22 f6 29 81 cd 3c 58 11 cb 97 9d 50 94 86
+Round keys
+
+
+Round 1
+8b d 21 57 
+85 97 f2 27 
+93 9a 36 60 
+1b d6 70 e2 
+
+
+Round 2
+45 48 69 3e 
+55 c2 30 17 
+b 91 a7 c7 
+40 96 e6 4 
+
+
+Round 3
+b1 f9 90 ae 
+93 51 61 76 
+f9 68 cf 8 
+f2 64 82 86 
+
+
+Round 4
+81 78 e8 46 
+a3 f2 93 e5 
+bd d5 1a 12 
+16 72 f0 76 
+
+
+Round 5
+48 30 d8 9e 
+6a 98 b ee 
+85 50 4a 58 
+4c 3e ce b8 
+
+
+Round 6
+40 70 a8 36 
+0 98 93 7d 
+e9 b9 f3 ab 
+47 79 b7 f 
+
+
+Round 7
+ff 8f 27 11 
+62 fa 69 14 
+9f 26 d5 7e 
+42 3b 8c 83 
+
+
+Round 8
+85 a 2d 3c 
+91 6b 2 16 
+73 55 80 fe 
+c0 fb 77 f4 
+
+
+Round 9
+d9 d3 fe c2 
+2a 41 43 55 
+cc 99 19 e7 
+2b d0 a7 53 
+
+
+Round 10
+13 c0 3e fc 
+be ff bc e9 
+21 b8 a1 46 
+e de 79 2a 
+
+
+Before Rounds 
+a e9 66 61 
+a4 7e ad b9 
+3 75 6a d2 
+f8 e2 ee ac 
+
+
+Round 1
+95 6c 41 5f 
+e5 ae e8 63 
+65 3f ea e7 
+1a 36 66 e6 
+
+
+Round 2
+bd dd bb b9 
+bd 78 6a 31 
+6c f6 e7 ce 
+f9 6d e1 4c 
+
+
+Round 3
+6d ef 22 f0 
+9f 6 39 8f 
+2b a3 17 1 
+79 2a c1 ba 
+
+
+Round 4
+6d 5c d4 56 
+3c 3 6f 53 
+88 0 1 57 
+e5 ac 3f 2f 
+
+
+Round 5
+21 d eb cf 
+94 b4 df 1d 
+1b ed 73 4c 
+5 a7 5 c9 
+
+
+Round 6
+83 54 1d c6 
+27 9f 67 2d 
+1f f3 ed ba 
+91 6a aa 43 
+
+
+Round 7
+97 fe 33 8 
+e8 e0 5c 1c 
+e4 c5 24 85 
+2 1d e8 d8 
+
+
+Round 8
+92 b1 b1 f7 
+8a 35 4d e 
+3b d4 d 93 
+41 b6 ac f5 
+
+
+Round 9
+54 59 f0 d1 
+56 b6 2c a9 
+8e 2f b0 79 
+23 7 48 51 
+
+
+Round 10
+74 93 3b 27 
+83 ab 1c 97 
+20 a6 4a 18 
+1b 19 d6 a0 
+
+
+Plain text block as 16 bytes in hexadecimal: 74 83 20 1b 93 ab a6 19 3b 1c 4a d6 27 97 18 a0 
