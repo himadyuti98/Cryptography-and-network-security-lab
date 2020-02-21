@@ -1,0 +1,6 @@
+Design and implement a protocol with the details as given below:
+	a. User A likes to allow to read his encrypted messages by User B without revealing his private key.
+	b. User A generates a new key pair which is shared between User B and Proxy.
+	c. User A delegates a proxy to reencrypt / partial decrypt the encrypted messages of User A using new key in the key pair.
+	d. Proxy sends the modified encrypted message to User B.
+	e. User B decrypts the encryoted message using new key in the key pair.

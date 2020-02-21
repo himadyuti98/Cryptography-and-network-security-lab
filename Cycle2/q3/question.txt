@@ -1,0 +1,5 @@
+A network in which each node can act as a client or server for other computers in the network, allowing shared access to various resources such as files, peripherals etc without the need for a central server.
+
+-- Design and code security association/agreement between sever and cient.
+-- Procedure for key management.
+-- Design and code for authentication between server and client.
